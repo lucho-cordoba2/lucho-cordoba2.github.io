@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sea Waves | CSS Only</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <!-- Header Section -->
-    <div class="header">
-      <!-- Content before the waves -->
-
-      <div class="innerHeader flex">
-        <img class="logo" src="./img/logo.png" alt="" />
-
-        <h1>Simple CSS Waves</h1>
-      </div>
-
-      <!-- waves Container -->
-      <div>
-        <svg
+<svg
           class="waves"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -56,13 +34,3 @@
             <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
           </g>
         </svg>
-      </div>
-    </div>
-    <!-- header Ends Here -->
-
-    <!-- Main Content -->
-    <div class="content flex">
-      <p>Code With Vetri | 2021 | Developed By Vetrivel Ravi with 💓</p>
-    </div>
-  </body>
-</html>
