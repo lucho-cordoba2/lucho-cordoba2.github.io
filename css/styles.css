@@ -1,119 +1,221 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
-
 body {
-  margin: 0;
+  background: white;
 }
 
-h1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 48px;
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-p {
-  font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
-  font-size: 14px;
-  color: #333333;
+.navbar-brand img {
+  max-height: 100%;
+  width: 100px;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
-.header {
+.navbar-brand:hover img {
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #313030;
+}
+
+.navbar .text-logo {
+  color: white;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #f8f9fa;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .nav-link {
+    padding: 0.5rem 0;
+  }
+  .navbar-toggler {
+    margin-top: 0.5rem;
+  }
+}
+
+/*banner*/
+
+.banner {
+  background-size: cover;
+  background-image: url("../asset/img/hawaii.jpg");
+  background-position: center;
+}
+
+.banner__container {
+  height: 500px;
   position: relative;
-  text-align: center;
-  background: linear-gradient(
-    60deg,
-    rgba(84, 58, 183, 1) 0%,
-    rgba(0, 172, 193, 1) 100%
-  );
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.591);
+}
 
+.banner__container h1 {
+  color: white;
+  margin-left: auto;
+}
+
+.banner__container p {
+  color: white;
+}
+
+.btn-transparent {
+  background-color: transparent;
   color: #fff;
 }
 
-.logo {
-  width: 100px;
-  padding-right: 15px;
-  display: inline-block;
-  vertical-align: middle;
+.btn-green {
+  background-color: #28a745;
+  color: #fff;
 }
 
-.innerHeader {
-  height: 65vh;
+.btn-transparent {
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/*galeria*/
+
+.gallery .card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery .card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem; /* Ajusta el margen inferior según tu preferencia */
+}
+
+.gallery {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: white;
+}
+
+.gallery p {
+  color: black;
+}
+
+.gallery .card-body span {
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: black;
+}
+
+/*sesion nueva */
+
+.my-section {
+  background-color: #f5f5f5; /* Cambia el color de fondo de la sección */
+  padding: 10px 0; /* Agrega un espacio interno de 50px arriba y abajo */
   width: 100%;
+}
+
+.my-section img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho de la columna */
+  height: 100%; /* Permite que la imagen mantenga su relación de aspecto */
+}
+
+.my-section h2 {
+  font-size: 32px; /* Ajusta el tamaño de la fuente del título */
+  margin-bottom: 20px; /* Agrega un espacio inferior de 20px al título */
+}
+
+.my-section p {
+  font-size: 18px; /* Ajusta el tamaño de la fuente del párrafo */
+  line-height: 1.5; /* Ajusta el interlineado del párrafo */
+  margin-bottom: 30px; /* Agrega un espacio inferior de 30px al párrafo */
+}
+
+.my-section button {
+  font-size: 16px; /* Ajusta el tamaño de la fuente del botón */
+  padding: 10px 20px; /* Agrega un espacio interno de 10px arriba y abajo, y 20px a la izquierda y derecha */
+  border-radius: 5px; /* Agrega bordes redondeados al botón */
+
+  transition: background-color 0.3s ease-in-out; /* Agrega una transición suave al color de fondo del botón */
+}
+
+.my-section button:hover {
+  color: #313030;
+  background-color: #fafafa; /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+}
+
+.my-section .colum2 {
+  background-color: #414141; /* Agrega un fondo negro a la columna */
+  color: #fff; /* Cambia el color del texto a blanco */
+  padding: 20px; /* Agrega un espacio interno de 50px a la columna */
+}
+
+/*session del formulario*/
+
+.btn-primary {
+  background-color: rgb(138, 203, 7);
+}
+
+footer {
+  background: linear-gradient(to right, #343a40, #007bff);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.footer-menu li {
+  margin: 0 50px;
 }
 
-.waves {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  min-height: 100px;
-  max-height: 150px;
+.footer-menu li a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.content {
-  position: relative;
-  height: 20vh;
-  text-align: center;
-  background-color: #fff;
+.footer-menu li a:hover {
+  color: #5f61c9;
 }
 
-/* Animation Starts Here */
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+.first-input {
+  margin-right: 18px; /* Puedes ajustar el valor del margen según tu preferencia */
 }
 
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
-}
-
-/* Shrinking for mobile screen */
-
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-
-  .content {
-    height: 30vh;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
+.form-group {
+  margin-bottom: 20px;
 }
